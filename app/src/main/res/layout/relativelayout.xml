@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <Button
+        android:id="@+id/helloButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/helloText"
+        android:layout_below="@+id/helloTextField"
+        android:layout_marginTop="36dp"
+        android:onClick="onClick"
+        android:text="Button" />
+
+    <TextView
+        android:id="@+id/helloText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="42dp"
+        android:text="TextView" />
+
+    <EditText
+        android:id="@+id/helloTextField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/helloText"
+        android:layout_marginStart="59dp"
+        android:layout_marginTop="21dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name" />
+
+    <Spinner
+        android:id="@+id/helloSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/helloButton"
+        android:layout_marginTop="65dp"
+        android:entries="@array/styleSpan" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/helloSpinner"
+        android:layout_marginTop="84dp"
+        android:background="@android:color/holo_red_dark"
+        android:max="255"
+        android:progress="128" />
+
+    <SeekBar
+        android:id="@+id/seekBar2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/seekBar"
+        android:layout_marginTop="32dp"
+        android:background="@android:color/holo_green_light"
+        android:max="255"
+        android:progress="128" />
+
+    <SeekBar
+        android:id="@+id/seekBar3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="20dp"
+        android:background="@android:color/holo_blue_light"
+        android:max="255"
+        android:progress="128" />
+
+</RelativeLayout>
